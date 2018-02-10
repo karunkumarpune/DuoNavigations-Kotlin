@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android  Interview</string>
+
+    <string name="txt_close_app">Do you want to close app !!</string>
+    <string name="txt_yes">yes</string>
+    <string name="txt_No">No</string>
+</resources>

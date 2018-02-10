@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="30dp"
+    android:paddingLeft="8dp"
+    android:paddingBottom="20dp"
+    android:background="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/drawer_header">
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingStart="3dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_profile_edt_img">
+
+            <com.ourstudy.utils.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="match_parent"
+                app:civ_border_width="3dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_detail_container"
+            android:paddingTop="13dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/rl_profile_edt_img">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:id="@+id/username"
+                android:text="My App"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:id="@+id/userEmail"
+                android:textSize="14sp"
+                android:text="karunkumar02525@gmail.com"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/drawer_header"
+        android:layout_weight="13"
+        android:weightSum="11"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/menu_delivery"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@mipmap/ic_launcher"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:id="@+id/btn_1"
+                android:textSize="15sp"
+                android:text="Java"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/privacy_container"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"
+                app:srcCompat="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="Android"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
